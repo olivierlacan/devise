@@ -2,9 +2,9 @@ require "action_controller/metal"
 
 module Devise
   # Failure application that will be called every time :warden is thrown from
-  # any strategy or hook. Responsible for redirect the user to the sign in
-  # page based on current scope and mapping. If no scope is given, redirect
-  # to the default_url.
+  # any strategy or hook. It is responsible for redirecting the user to the sign
+  # in page based on current scope and mapping. If no scope is given, it 
+  # redirect to the default_url.
   class FailureApp < ActionController::Metal
     include ActionController::UrlFor
     include ActionController::Redirecting
